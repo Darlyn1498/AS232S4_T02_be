@@ -1,0 +1,28 @@
+spring:
+  datasource:
+    url: jdbc:oracle:thin:@sistemasistemagestionventas_medium?TNS_ADMIN=Wallet_SistemaGestionVentas
+    username: DEVELOPER2
+    password: soyAngie2025
+    driver-class-name: oracle.jdbc.OracleDriver
+
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+      dialect: org.hibernate.dialect.OracleDialect
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+server:
+  port: 8080
+
+logging:
+  level:
+    org.springframework: INFO
+    org.hibernate.SQL: DEBUG
+    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
+
+
+
